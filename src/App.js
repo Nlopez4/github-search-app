@@ -15,12 +15,10 @@ function App() {
     const res = await fetch(`https://api.github.com/users/${username}`);
     const json = await res.json();
     setUserData(json);
-    console.log(json);
   };
 
   function onChange(e) {
     setUsername(e.target.value);
-    console.log(username);
   };
 
 
